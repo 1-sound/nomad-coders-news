@@ -14,7 +14,7 @@ function onGeoOk(position){
         temp.innerText = `${data.main.temp}°C`;
 
         const iconCode = data.weather[0].icon;
-        const iconUrl = `http://openweathermap.org/img/w/${iconCode}.png`;
+        const iconUrl = `https://openweathermap.org/img/w/${iconCode}.png`;
         const iconImage = document.createElement("img");
         iconImage.src = iconUrl;
         iconImage.id = "weatherIcon";
